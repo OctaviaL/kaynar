@@ -1,13 +1,24 @@
 from rest_framework.views import APIView
+<<<<<<< HEAD
 
 from account.serializers import *
+=======
+from rest_framework.response import Response
+from account.serializers import RegisterSerializers, LoginSerializer, ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
+>>>>>>> 29f9e13c4258fb0f464541c9588f14b38927cb07
 from rest_framework.response import Response
 from django.contrib.auth import get_user_model
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 from account.models import *
+<<<<<<< HEAD
 from account.serializers import  ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
+=======
+from account.serializers import ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
+from rest_framework.response import Response
+from django.contrib.auth import get_user_model
+>>>>>>> 29f9e13c4258fb0f464541c9588f14b38927cb07
 
 User = get_user_model()
 
@@ -46,7 +57,10 @@ class LogoutAPIView(ObtainAuthToken):
         except:
             return Response('Ошибка!', status=403)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29f9e13c4258fb0f464541c9588f14b38927cb07
 
 class ForgotPasswordAPIView(APIView):
    
