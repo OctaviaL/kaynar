@@ -5,8 +5,8 @@ User = get_user_model()
 
 class PetPost(models.Model):
     CHOICES = (
-        'dogs', 'собаки',
-        'cats', 'кошки',
+        ('dogs', 'собаки'),
+        ('cats', 'кошки'),
     )
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='petposts')
     name = models.CharField(max_length=50, unique=True)
@@ -16,12 +16,12 @@ class PetPost(models.Model):
     category = models.CharField(choices=CHOICES, max_length=20)
     
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
 
 class PetImage(models.Model):
     name = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='petimages')
-    image = models.ImageField(blank=True, null=True, upload_to='petimages')
+    image = models.ImageField(blank=True, null=True, upload_to='images')
 
     def __str__(self):
-        return self.name
+        return f'{self.image}'
