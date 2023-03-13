@@ -7,12 +7,12 @@ from rest_framework.permissions import IsAdminUser
 class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
-    # permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminUser]
 
 
 class PetImageModelViewSet(viewsets.ModelViewSet):
     queryset = PetImage.objects.all()
     serializer_class = PetImageSerializers
-    # permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminUser]
 
 

@@ -20,7 +20,7 @@ class PetPost(models.Model):
 
 
 class PetImage(models.Model):
-    name = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='petimages')
+    name = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='images')
     image = models.ImageField(blank=True, null=True, upload_to='images')
 
     def __str__(self):
