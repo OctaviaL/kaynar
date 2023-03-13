@@ -122,3 +122,16 @@ Watching for file changes with StatReloader
 "GET /swagger/?format=openapi HTTP/1.1" 200 2607
 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
 
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader

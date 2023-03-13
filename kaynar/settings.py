@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     # my apps
     'account',
     'feedback',
+    'spam',
+    'post',
 ]
 
 MIDDLEWARE = [
