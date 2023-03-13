@@ -150,4 +150,28 @@ Watching for file changes with StatReloader
 /home/hello/Desktop/py25/django/kaynar/post/models.py changed, reloading.
 Watching for file changes with StatReloader
 /home/hello/Desktop/py25/django/kaynar/post/admin.py changed, reloading.
+=======
+"GET /swagger/ HTTP/1.1" 200 2153
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+"GET /swagger/?format=openapi HTTP/1.1" 200 2607
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
 Watching for file changes with StatReloader
