@@ -21,14 +21,15 @@ class PetPost(models.Model):
     category = models.CharField(choices=CHOICES, max_length=20)
     
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
 
 class PetImage(models.Model):
     name = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='petimages')
-    image = models.ImageField(blank=True, null=True, upload_to='petimages')
+    image = models.ImageField(blank=True, null=True, upload_to='images')
 
     def __str__(self):
+        return f'{self.image}'
         return self.name
     
 
@@ -39,4 +40,3 @@ def post_product(sender, instance, created, **kwargs):
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
-
