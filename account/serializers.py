@@ -54,7 +54,7 @@ class LoginSerializer(serializers.Serializer):
         attrs['user'] = user
 
         return attrs 
-=======
+
 from django.contrib.auth import get_user_model
 from account.send_email import send_password_code
 # from account.tasks import send_activation_code as celery_register
