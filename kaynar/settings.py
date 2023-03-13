@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     #
     'rest_framework',
     'rest_framework_simplejwt',
+    'drf_yasg',
     'corsheaders',
 
     # my apps
@@ -133,7 +134,7 @@ REST_FRAMEWORK = {
     )
 }
 
-AUTH_USER_MODEL = 'account.CustomUser'
+# AUTH_USER_MODEL = 'account.CustomUser'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -157,3 +158,13 @@ CORS_ALLOWED_ORIGINS = [
 
 CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'api_key': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization'
+        }
+    }
+}
