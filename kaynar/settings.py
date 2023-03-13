@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     #
     'rest_framework',
     'rest_framework_simplejwt',
+    'drf_yasg',
     'corsheaders',
 
     # my apps
@@ -159,6 +160,17 @@ CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 
 
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'api_key': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization'
+        }
+    }
+}
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -189,3 +201,4 @@ LOGGING = {
         },
     },
 }
+
