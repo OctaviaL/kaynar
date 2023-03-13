@@ -20,5 +20,7 @@ urlpatterns = [
     path('api/v1/acount/', include('account.urls')),
     path('api/v1/spam/', include('spam.urls')),
     # path('api/v1/post/', include('feedback.urls')),
+    # path('api/v1/post/', include('feedback.urls')),
+    # path('api/v1/feedback/', include('.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
