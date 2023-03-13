@@ -135,3 +135,7 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
