@@ -110,3 +110,4 @@ Watching for file changes with StatReloader
 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
 "GET /favicon.ico HTTP/1.1" 404 2218
 "POST /account/login/ HTTP/1.1" 200 483
+Watching for file changes with StatReloader
