@@ -1,7 +1,7 @@
 from rest_framework import serializers
-
 from django.contrib.auth import get_user_model, authenticate
 from account.send_mail import send_activation_code
+from account.send_email import send_password_code
 
 User = get_user_model()
 
@@ -54,14 +54,8 @@ class LoginSerializer(serializers.Serializer):
         attrs['user'] = user
 
         return attrs 
-=======
-from django.contrib.auth import get_user_model
-from account.send_email import send_password_code
-# from account.tasks import send_activation_code as celery_register
-
-User = get_user_model()  # CustomUser
-
-
+    
+    
 class ForgotPasswordSerializer(serializers.Serializer):
     email = serializers.EmailField(required=True)
 
