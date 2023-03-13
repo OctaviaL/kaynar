@@ -6,19 +6,12 @@ from django.dispatch import receiver
 from post.tasks import send_product_news
 
 
-
-@receiver(post_save, sender=PetPost)    
-def post_product(sender, instance, created, **kwargs):
-    if created:
-        send_product_news.delay(instance.name)
-from django.contrib.auth import get_user_model
-
 User = get_user_model()
 
 class PetPost(models.Model):
     CHOICES = (
-        'dogs', 'собаки',
-        'cats', 'кошки',
+        ('dogs', 'собаки'),
+        ('cats', 'кошки'),
     )
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='petposts')
     name = models.CharField(max_length=50, unique=True)
@@ -37,4 +30,13 @@ class PetImage(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+@receiver(post_save, sender=PetPost)    
+def post_product(sender, instance, created, **kwargs):
+    if created:
+        send_product_news.delay(instance.name)
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
