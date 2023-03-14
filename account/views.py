@@ -9,7 +9,6 @@ from rest_framework.permissions import IsAuthenticated
 from account.models import *
 from drf_yasg.utils import swagger_auto_schema
 
-
 User = get_user_model()
 
 class RegisterAPIView(APIView):
