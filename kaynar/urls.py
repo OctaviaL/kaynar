@@ -6,14 +6,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import permissions
 
-# schema_view = get_schema_view(
-#     openapi.Info(
-#     title='Kaynar',
-#     default_version='v1',
-#     description='Благотворительность'
-#     ),
-#     public=True
-# )
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -34,7 +26,6 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger')),
     path('api/v1/account/', include('account.urls')),
     path('api/v1/kaynar/', include('post.urls')),
-    path('api/v1/account/', include('account.urls')),
     path('api/v1/spam/', include('spam.urls')),
     path('api/v1/volunteering/', include('volunteering.urls')),
     # path('api/v1/feedback/', include('.urls')),

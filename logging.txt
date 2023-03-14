@@ -194,6 +194,9 @@ Watching for file changes with StatReloader
 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
 Watching for file changes with StatReloader
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
 "POST /api/v1/account/register/ HTTP/1.1" 400 50
 "POST /api/v1/account/reset_password/ HTTP/1.1" 400 37
 "POST /api/v1/account/reset_password_complete/ HTTP/1.1" 400 122
@@ -298,7 +301,10 @@ Watching for file changes with StatReloader
 "GET /admin/login/?next=/admin/post/petpost/add/ HTTP/1.1" 200 2249
 "GET /static/admin/css/base.css HTTP/1.1" 304 0
 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+<<<<<<< HEAD
 >>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
@@ -307,6 +313,9 @@ Watching for file changes with StatReloader
 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2381
 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2381
@@ -705,6 +714,7 @@ Traceback (most recent call last):
     return self.cursor.execute(sql, params)
 psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "post_petpost_name_key"
 DETAIL:  Key (name)=(Сэм) already exists.
+<<<<<<< HEAD
 >>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
 
 
@@ -712,6 +722,11 @@ The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
 <<<<<<< HEAD
+=======
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1026,7 +1041,10 @@ psycopg2.errors.UndefinedColumn: column post_petpost.image does not exist
 LINE 1: ...etpost"."description", "post_petpost"."category", "post_petp...
                                                              ^
 HINT:  Perhaps you meant to reference the column "post_petpost.age".
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1086,6 +1104,7 @@ Traceback (most recent call last):
     return self.cursor.execute(sql, params)
 psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "post_petpost_name_key"
 DETAIL:  Key (name)=(Сэм) already exists.
+<<<<<<< HEAD
 >>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
 
 
@@ -1093,6 +1112,11 @@ The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
 <<<<<<< HEAD
+=======
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1386,7 +1410,10 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
 Watching for file changes with StatReloader
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1487,4 +1514,7 @@ Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/celery.py changed, reloading.
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/celery.py changed, reloading.
+<<<<<<< HEAD
 >>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
