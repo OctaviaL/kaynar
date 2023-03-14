@@ -2,12 +2,11 @@ from django.core.mail import send_mail
 
 def send_activation_code(email, code):
     send_mail(
-        'Kaynar',
-        f'http://localhost:8000/api/v1/account/activate/{code}/',
+        'Приют для животных "Кайнар"',
+        f'Ваш код активации: http://35.246.210.249/api/v1/account/activate/{code}/',
         'ajkanysdzumagulova@gmail.com',
         [email]
     )
-
 
 def send_password_code(email, code):
     

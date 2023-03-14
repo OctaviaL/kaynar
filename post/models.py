@@ -35,7 +35,6 @@ class PetImage(models.Model):
 
     def __str__(self):
         return f'{self.image}'
-        return self.name
     
 
 @receiver(post_save, sender=PetPost)    

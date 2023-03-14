@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'account',
     'feedback',
     'spam',
-
+    'volunteering',
     'post',
 ]
 
