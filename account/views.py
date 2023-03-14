@@ -10,10 +10,12 @@ from account.models import *
 from account.serializers import ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
 from rest_framework.response import Response
 from django.contrib.auth import get_user_model
+from drf_yasg.utils import swagger_auto_schema
 
 User = get_user_model()
 
 class RegisterAPIView(APIView):
+    @swagger_auto_schema(request_body=RegisterSerializers)
     def post(self, request):
         serializer = RegisterSerializers(data=request.data)
         serializer.is_valid(raise_exception=True)
