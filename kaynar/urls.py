@@ -36,6 +36,7 @@ urlpatterns = [
     path('api/v1/post/', include('post.urls')),
     path('api/v1/spam/', include('spam.urls')),
     path('api/v1/volunteering/', include('volunteering.urls')),
+    path('social-auth/', include('social_django.urls', namespace="social")),
     # path('api/v1/post/', include('feedback.urls')),
     # path('api/v1/feedback/', include('.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
