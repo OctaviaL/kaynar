@@ -1253,3 +1253,35 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/hello/Desktop/py25/django/kaynar/post/urls.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /swagger/ HTTP/1.1" 200 2153
+"GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 143858
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 324275
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1086481
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+"GET /swagger/?format=openapi HTTP/1.1" 200 9403
+"GET /api/v1/kaynar/pet_image/ HTTP/1.1" 401 58
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader

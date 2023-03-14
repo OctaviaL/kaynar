@@ -5,7 +5,6 @@ from post.serializers import *
 from rest_framework.permissions import IsAdminUser, AllowAny
 from rest_framework.response import Response
 
-
 class PetPostListGenericView(generics.ListAPIView):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
