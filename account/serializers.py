@@ -63,7 +63,7 @@ class LoginSerializer(serializers.Serializer):
 class ForgotPasswordSerializer(serializers.Serializer):
     email = serializers.EmailField(required=True)
 
-    def validete_email(self, email):
+    def validate_email(self, email):
         if not User.objects.filter(email=email).exists():
             raise serializers.ValidationError('Пользователь не существует!')
         
