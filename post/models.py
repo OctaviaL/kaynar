@@ -9,16 +9,21 @@ from post.tasks import send_product_news
 User = get_user_model()
 
 class PetPost(models.Model):
-    CHOICES = (
+    CHOICES1 = (
         ('dogs', 'собаки'),
         ('cats', 'кошки'),
+    )
+
+    CHOICES2 = (
+        ('male', 'мальчик'),
+        ('female', 'девочка'),
     )
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='petposts')
     name = models.CharField(max_length=50, unique=True)
     age = models.IntegerField()
-    gender = models.CharField(max_length=10, unique=True)
+    gender = models.CharField(choices=CHOICES2, max_length=10)
     description = models.TextField()
-    category = models.CharField(choices=CHOICES, max_length=20)
+    category = models.CharField(choices=CHOICES1, max_length=20)
     
     def __str__(self):
         return f'{self.name}'
@@ -26,7 +31,7 @@ class PetPost(models.Model):
 
 class PetImage(models.Model):
     name = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField(blank=True, null=True, upload_to='images')
+    image = models.ImageField(upload_to='images', blank=True, null=True)
 
     def __str__(self):
         return f'{self.image}'
