@@ -1,39 +1,33 @@
-from django.shortcuts import render
 
 from django.shortcuts import render, get_object_or_404, redirect
-from django.contrib.auth.decorators import login_required
-from django.contrib import messages
-from .models import Post, Like, Comment
+from .models import  Comment
+from feedback.serializers import CommentSerializer
+from django.utils import timezone
+from post.models import PetPost
+from rest_framework.viewsets import ModelViewSet, GenericViewSet
+from rest_framework import mixins
+from rest_framework.permissions import IsAuthenticated
 
-def post_list(request):
-    posts = Post.objects.all()
-    return render(request, 'post_list.html', {'posts': posts})
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'post_detail.html', {'post': post})
+class CommentModelViewSet(mixins.CreateModelMixin, #создает
+                   mixins.RetrieveModelMixin, #
+                   mixins.DestroyModelMixin,
+                   mixins.ListModelMixin,
+                   GenericViewSet):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+    permission_classes = [IsAuthenticated]
 
-@login_required
-def post_like(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    action = request.POST.get('action')
-
-    if action == 'like':
-        Like.objects.create(post=post, user=request.user)
-    elif action == 'unlike':
-        Like.objects.filter(post=post, user=request.user).delete()
-
-    return redirect('post_detail', pk=post.pk)
-
-@login_required
-def post_comment(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-
+def add_comment_to_post(request, pk):
+    post = get_object_or_404(PetPost, pk=pk)
     if request.method == 'POST':
-        content = request.POST.get('content')
-        Comment.objects.create(post=post, author=request.user, content=content)
-        messages.success(request, 'Your comment was added.')
-        return redirect('post_detail', pk=post.pk)
-
-    return render(request, 'post_detail.html', {'post': post})
-
+        form = CommentSerializer(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.post = post
+            comment.author = request.user
+            comment.save()
+            return redirect('yourapp:post_detail', pk=post.pk)
+    else:
+        form = CommentSerializer()
+    return render(request, 'yourapp/add_comment_to_post.html', {'form': form})

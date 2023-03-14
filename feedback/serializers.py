@@ -1,10 +1,10 @@
 from rest_framework import serializers
 from feedback.models import *
-class PostSerializer(serializers.ModelSerializer):
+# class PostSerializer(serializers.ModelSerializer):
 
-    class Meta:
-        model = Post
-        fields = '__all__'
+#     class Meta:
+#         model = Post
+#         fields = '__all__'
 
 
 class LikeSerializer(serializers.ModelSerializer):
