@@ -7,7 +7,7 @@ router = DefaultRouter()
 router.register('', VolunteerModelViewSet)
 
 urlpatterns = [
-    path('confirm/<uuid:code>', VolunteerConfirmAPIView.as_view()),
+    path('volonteer_confirm/<uuid:code>', VolunteerConfirmAPIView.as_view()),
     path('', include(router.urls))
 
 ]
