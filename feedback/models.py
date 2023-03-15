@@ -6,7 +6,7 @@ User = get_user_model()
 
 class Like(models.Model):
     """
-        Модель лайков
+        Модель поглаживаний
     """
 
     post = models.ForeignKey(
@@ -30,7 +30,6 @@ class Comment(models.Model):
         return self.text
     
 
-
 class Favorite(models.Model):
     owner = models.ForeignKey(
         User,
@@ -42,4 +41,27 @@ class Favorite(models.Model):
         on_delete=models.CASCADE,
         related_name='favorites'
     )
+
+class Rating(models.Model):
+    RATING = (
+        ('Солнышко', 'Солнышко'),
+        ('Сырничек', 'Сырничек'),
+        ('Малышочек', 'Малышочек'),
+        ('Круассанчик', 'Круассанчик'),
+        ('Сладкая булочка', 'Сладкая булочка')
+    )
+    owner = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='ratings'
+    )
+    post = models.ForeignKey(
+        PetPost,
+        on_delete=models.CASCADE,
+        related_name='ratings'
+    )
+    rating = models.CharField(max_length=50, choices=RATING)
+
+    def __str__(self) -> str:
+        return f'{self.owner} --> {self.post.title}'
 

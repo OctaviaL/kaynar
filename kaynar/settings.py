@@ -30,11 +30,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #
+    # 'users.apps.UsersConfig', # Our users app
+    'rest_framework.authtoken', # Adding token based authentication from drf
+    'social_django', # Python social auth django app
+
+    #
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_yasg',
     'corsheaders',
-    'social_django',
+    # 'social_django',
 
     # my apps
     'account',
@@ -42,7 +47,10 @@ INSTALLED_APPS = [
     'spam',
     'volunteering',
     'post',
+
 ]
+
+SOCIAL_AUTH_JSONFIELD_ENABLED = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -210,37 +218,51 @@ LOGGING = {
 }
 
 
-SOCIAL_AUTH_POSTGRES_JSONFIELD = True
+# SOCIAL_AUTH_POSTGRES_JSONFIELD = True
+
+# AUTHENTICATION_BACKENDS = [
+#     'social_auth.backends.facebook.FacebookBackend',
+#     'social_auth.backends.contrib.vk.VKOAuth2Backend',
+#     'social_auth.backends.google.GoogleOAuth2Backend',
+#     'django.contrib.auth.backends.ModelBackend',
+# ]
+
+# # Настройки для Facebook
+# FACEBOOK_APP_ID = 'app_id'
+# FACEBOOK_API_SECRET = 'secret_token'
+ 
+# # Настройки для Вконтакте
+# VK_APP_ID = 'app_id'
+# VKONTAKTE_APP_ID = VK_APP_ID
+# VK_API_SECRET = 'key_api_secret'
+# VKONTAKTE_APP_SECRET = VK_API_SECRET
+ 
+# # Настройки для Google
+# GOOGLE_OAUTH2_CLIENT_ID = '123456789.apps.googleusercontent.com'
+# GOOGLE_OAUTH2_CLIENT_SECRET = 'key_secert'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication'
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
 
 AUTHENTICATION_BACKENDS = [
-    'social_auth.backends.facebook.FacebookBackend',
-    'social_auth.backends.contrib.vk.VKOAuth2Backend',
-    'social_auth.backends.google.GoogleOAuth2Backend',
     'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
-# Настройки для Facebook
-FACEBOOK_APP_ID = 'app_id'
-FACEBOOK_API_SECRET = 'secret_token'
- 
-# Настройки для Вконтакте
-VK_APP_ID = 'app_id'
-VKONTAKTE_APP_ID = VK_APP_ID
-VK_API_SECRET = 'key_api_secret'
-VKONTAKTE_APP_SECRET = VK_API_SECRET
- 
-# Настройки для Google
-GOOGLE_OAUTH2_CLIENT_ID = '123456789.apps.googleusercontent.com'
-GOOGLE_OAUTH2_CLIENT_SECRET = 'key_secert'
-
-SOCIAL_AUTH_PIPELINE = [
+SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
     'social_core.pipeline.social_auth.social_uid',
+    'social_core.pipeline.social_auth.auth_allowed',
     'social_core.pipeline.social_auth.social_user',
-    'social_core.pipeline.user.get_username',
-    'social_core.pipeline.social_auth.associate_by_email',
-    'social_core.pipeline.user.create_user',
     'social_core.pipeline.social_auth.associate_user',
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
-]
+)
