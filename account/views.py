@@ -7,9 +7,12 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 from account.models import *
+from drf_yasg.utils import swagger_auto_schema
+
 User = get_user_model()
 
 class RegisterAPIView(APIView):
+    @swagger_auto_schema(request_body=RegisterSerializers)
     def post(self, request):
         serializer = RegisterSerializers(data=request.data)
         serializer.is_valid(raise_exception=True)

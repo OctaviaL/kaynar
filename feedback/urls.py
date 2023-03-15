@@ -13,3 +13,14 @@ urlpatterns = [
 ]
 
 
+from rest_framework.routers import DefaultRouter
+from feedback.views import FavoriteModelViewSet
+
+router = DefaultRouter()
+router.register('', FavoriteModelViewSet)
+
+urlpatterns = [
+    path('favorite/', include(router.urls))
+
+]
+
