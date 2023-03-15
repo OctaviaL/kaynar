@@ -7,12 +7,7 @@ class Like(models.Model):
     """
         Модель лайков
     """
-
-    post = models.ForeignKey(
-        PetPost,
-        on_delete=models.CASCADE,
-        related_name='likes'
-    )
+    post = models.ForeignKey( PetPost,on_delete=models.CASCADE,related_name='likes' )
     is_like = models.BooleanField(default=False)
 
     def __str__(self):
@@ -21,7 +16,6 @@ class Like(models.Model):
 
 class Comment(models.Model):
     post_comment = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='comments') # пост 
-   
     text = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
 
