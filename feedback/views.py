@@ -1,13 +1,13 @@
 
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import  Comment
+from .models import  *
 from feedback.serializers import CommentSerializer
 from django.utils import timezone
-from post.models import PetPost
+from .models import PetPost
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.views import APIView
 
 class CommentModelViewSet(mixins.CreateModelMixin, #создает
                    mixins.RetrieveModelMixin, #
@@ -31,3 +31,15 @@ def add_comment_to_post(request, pk):
     else:
         form = CommentSerializer()
     return render(request, 'yourapp/add_comment_to_post.html', {'form': form})
+
+
+# class PostView(APIView):
+#     template_name = 'feedback.html'
+#     form_class = Post_Choices
+#     success_url = '/thank-you/'
+
+#     def form_valid(self, form):
+#         feedback = form.save(commit=False)
+#         feedback.rating = models.cleaned_data.get('rating')
+#         feedback.save()
+#         return super().form_valid(models)
