@@ -2,6 +2,7 @@ from pathlib import Path
 from decouple import config
 import dj_database_url
 from datetime import timedelta
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -181,6 +182,17 @@ SWAGGER_SETTINGS = {
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'hadlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'file': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logging.txt',
+            'maxBytes': 1024*1024*5,
+            'backupCount': 5,
+        }
+    },
     'formatters': {
         'verbose': {
             'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
@@ -223,7 +235,7 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': False,
         },
-    'myproject.custom': {
+        'myproject.custom': {
             'handlers': ['console', 'mail_admins'],
             'level': 'INFO',
             'filters': ['special']

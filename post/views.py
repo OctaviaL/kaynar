@@ -46,3 +46,11 @@ class PetImageModelViewSet(viewsets.ModelViewSet):
 
 
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from loguru import logger
+
+class TestView(APIView):
+    def get(self, request, *args, **kwargs):
+        logger.info('This is a test log message')
+        return Response({'message': 'Hello, world!'})
