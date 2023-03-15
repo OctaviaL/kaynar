@@ -7,9 +7,6 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 from account.models import *
-from account.serializers import ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
-from rest_framework.response import Response
-from django.contrib.auth import get_user_model
 from drf_yasg.utils import swagger_auto_schema
 
 User = get_user_model()

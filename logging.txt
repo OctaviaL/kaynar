@@ -193,6 +193,295 @@ Watching for file changes with StatReloader
 "GET /swagger/?format=openapi HTTP/1.1" 200 3705
 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
 Watching for file changes with StatReloader
+"GET / HTTP/1.1" 404 2519
+"GET /favicon.ico HTTP/1.1" 404 2570
+"GET /swagger/ HTTP/1.1" 200 2153
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 143858
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 324275
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+"GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1086481
+"GET /swagger/?format=openapi HTTP/1.1" 200 3705
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 404 2519
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6211
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/post/petimage/ HTTP/1.1" 200 6981
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/feedback/like/ HTTP/1.1" 200 6964
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/like/add/ HTTP/1.1" 200 8913
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 404 2519
+"GET /favicon.ico HTTP/1.1" 404 2570
+"GET /like/ HTTP/1.1" 404 2552
+/home/hello/Desktop/py25/django/kaynar/feedback/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 404 2408
+"GET /swagger/ HTTP/1.1" 200 2153
+"GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 143858
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 324275
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1086481
+"GET /swagger/?format=openapi HTTP/1.1" 200 2608
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+"POST /api/v1/account/register/ HTTP/1.1" 400 116
+/home/hello/Desktop/py25/django/kaynar/kaynar/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/kaynar/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/kaynar/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/kaynar/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/kaynar/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /like/ HTTP/1.1" 404 2557
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6642
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/feedback/comment/ HTTP/1.1" 200 7283
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/feedback/comment/add/ HTTP/1.1" 200 10865
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/feedback/like/ HTTP/1.1" 200 7262
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/like/add/ HTTP/1.1" 200 9211
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/ HTTP/1.1" 200 7272
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 11410
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/post/petpost/add/ HTTP/1.1" 302 0
+"GET /admin/post/petpost/ HTTP/1.1" 200 8614
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/feedback/like/ HTTP/1.1" 200 7262
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/like/add/ HTTP/1.1" 200 9245
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/feedback/like/add/ HTTP/1.1" 302 0
+"GET /admin/feedback/like/ HTTP/1.1" 200 8596
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/comment/ HTTP/1.1" 200 7283
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/comment/add/ HTTP/1.1" 200 10899
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/feedback/comment/add/ HTTP/1.1" 200 11073
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/feedback/comment/add/ HTTP/1.1" 302 0
+"GET /admin/feedback/comment/ HTTP/1.1" 200 8684
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+/home/hello/Desktop/py25/django/kaynar/feedback/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/feedback/comment/add/ HTTP/1.1" 200 9423
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/feedback/admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 404 2524
+"GET /favicon.ico HTTP/1.1" 404 2575
+"GET /admin/ HTTP/1.1" 200 7549
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /admin/feedback/ HTTP/1.1" 200 3454
+"GET /admin/feedback/comment/ HTTP/1.1" 200 8458
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+=======
 "POST /api/v1/account/register/ HTTP/1.1" 400 50
 "POST /api/v1/account/reset_password/ HTTP/1.1" 400 37
 "POST /api/v1/account/reset_password_complete/ HTTP/1.1" 400 122
@@ -675,7 +964,6 @@ psycopg2.errors.UndefinedColumn: column post_petpost.image does not exist
 LINE 1: ...etpost"."description", "post_petpost"."category", "post_petp...
                                                              ^
 HINT:  Perhaps you meant to reference the column "post_petpost.age".
-=======
 "GET /favicon.ico HTTP/1.1" 404 2571
 "POST /admin/login/?next=/admin/post/petpost/add/ HTTP/1.1" 302 0
 "GET /admin/post/petpost/add/ HTTP/1.1" 200 11156
@@ -1474,3 +1762,4 @@ Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/celery.py changed, reloading.
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/celery.py changed, reloading.
+
