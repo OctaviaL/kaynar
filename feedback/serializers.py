@@ -1,11 +1,6 @@
 from rest_framework import serializers
 from feedback.models import *
 from feedback.models import Favorite
-# class PostSerializer(serializers.ModelSerializer):
-
-#     class Meta:
-#         model = Post
-#         fields = '__all__'
 
 
 class LikeSerializer(serializers.ModelSerializer):
@@ -29,4 +24,12 @@ class FavoriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Favorite
         fields = '__all__'
+
+
+class RatingSerializer(serializers.ModelSerializer):
+    rating = serializers.IntegerField(min_value=1, max_value=5)
+
+    class Meta:
+        model = Rating 
+        fields = ('rating', )
 
