@@ -6,3 +6,4 @@ class InterceptHandler(logging.Handler):
         logger_opt.log(record.levelno, record.getMessage())
 
 logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
+
