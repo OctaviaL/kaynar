@@ -5,6 +5,7 @@ from account.views import ForgotPasswordAPIView, ForgotPasswordCompleteAPIView
 from . import views
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
+
 urlpatterns = [
     path('register/', RegisterAPIView.as_view()),
     path('activate/<uuid:activation_code>/', ActivationView.as_view()),
