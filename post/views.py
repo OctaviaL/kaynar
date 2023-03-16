@@ -2,28 +2,54 @@ from django.shortcuts import render
 from rest_framework import  viewsets, generics
 from post.models import *
 from post.serializers import *
-from rest_framework.permissions import IsAdminUser
-from rest_framework.pagination import PageNumberPagination
+from rest_framework.permissions import IsAdminUser, AllowAny
+from rest_framework.response import Response
+from feedback.models import Like, Rating
+from feedback.serializers import RatingSerializer
+from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
-
+from rest_framework.pagination import PageNumberPagination
 
 class PetsPagePagination(PageNumberPagination):
-    page_size = 20
-    page_query_param = 'page_size'
-    max_page_size = 100
-
+    page_size = 10
+    page_size_query_param = 'page_size'
+    max_page_size = 50
 
 
 class PetPostListGenericView(generics.ListAPIView):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
+    permission_classes = [AllowAny]
+
+    @action(methods=['POST'], detail=True)
+    def like(self, request, pk, *args, **kwargs):
+        user = request.user
+        print(user)
+        print(pk)
+        like_obj, _ = Like.objects.get_or_create(owner=user, post_id=pk)
+        like_obj.is_like = not like_obj.is_like
+        like_obj.save()
+        status = 'Поглажен'
+        if not like_obj.is_like:
+            status = 'unliked'
+        return Response({'status': status})
     
+    @action(methods=['POST'], detail=True)
+    def rating(self, request, pk, *args, **kwargs):
+        serializer = RatingSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        rating_obj, _ = Rating.objects.get_or_create(owner=request.user, post_id=pk)
+        rating_obj.rating = serializer.data['rating']
+        rating_obj.save()
+        return Response(serializer.data)
    
+
 class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
     permission_classes = [IsAdminUser] 
+
     pagination_class = PetsPagePagination
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ['category', 'gender']
@@ -35,6 +61,7 @@ class PetPostModelViewset(viewsets.ModelViewSet):
 class PetImageListGenericView(generics.ListAPIView):
     queryset = PetImage.objects.all()
     serializer_class = PetImageSerializers
+    permission_classes = [AllowAny]
 
 
 
@@ -45,12 +72,3 @@ class PetImageModelViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAdminUser]
 
 
-
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from loguru import logger
-
-class TestView(APIView):
-    def get(self, request, *args, **kwargs):
-        logger.info('This is a test log message')
-        return Response({'message': 'Hello, world!'})

@@ -30,11 +30,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # #
+    # # 'users.apps.UsersConfig', # Our users app
+    # 'rest_framework.authtoken', # Adding token based authentication from drf
+    # 'social_django', # Python social auth django app
+
     #
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_yasg',
     'corsheaders',
+
 
     # my apps
     'account',
@@ -42,13 +48,18 @@ INSTALLED_APPS = [
     'spam',
     'volunteering',
     'post',
+    'review',
+
 ]
+
+# SOCIAL_AUTH_JSONFIELD_ENABLED = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
 
     'corsheaders.middleware.CorsMiddleware',
+    "django.middleware.common.CommonMiddleware",
 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -73,6 +84,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'social_django.context_processors.backends', # add this
+                # 'social_django.context_processors.login_redirect', # add this
             ],
         },
     },
@@ -137,7 +150,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 100,
+    'PAGE_SIZE': 50,
 
 }
 
@@ -161,7 +174,7 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000'
+    "http://localhost:3000",
 ]
 
 CELERY_BROKER_URL = 'redis://localhost:6379'
@@ -242,3 +255,53 @@ LOGGING = {
         }
     }
 }
+
+
+# SOCIAL_AUTH_POSTGRES_JSONFIELD = True
+
+# AUTHENTICATION_BACKENDS = [
+#     'social_auth.backends.facebook.FacebookBackend',
+#     'social_auth.backends.contrib.vk.VKOAuth2Backend',
+#     'social_auth.backends.google.GoogleOAuth2Backend',
+#     'django.contrib.auth.backends.ModelBackend',
+# ]
+
+# # Настройки для Facebook
+# FACEBOOK_APP_ID = 'app_id'
+# FACEBOOK_API_SECRET = 'secret_token'
+ 
+# # Настройки для Вконтакте
+# VK_APP_ID = 'app_id'
+# VKONTAKTE_APP_ID = VK_APP_ID
+# VK_API_SECRET = 'key_api_secret'
+# VKONTAKTE_APP_SECRET = VK_API_SECRET
+ 
+# # Настройки для Google
+# GOOGLE_OAUTH2_CLIENT_ID = '123456789.apps.googleusercontent.com'
+# GOOGLE_OAUTH2_CLIENT_SECRET = 'key_secert'
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework.authentication.BasicAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
+#         'rest_framework.authentication.TokenAuthentication'
+#     ],
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ]
+# }
+
+# AUTHENTICATION_BACKENDS = [
+#     'django.contrib.auth.backends.ModelBackend',
+#     'social_core.backends.google.GoogleOAuth2',
+# ]
+
+# SOCIAL_AUTH_PIPELINE = (
+#     'social_core.pipeline.social_auth.social_details',
+#     'social_core.pipeline.social_auth.social_uid',
+#     'social_core.pipeline.social_auth.auth_allowed',
+#     'social_core.pipeline.social_auth.social_user',
+#     'social_core.pipeline.social_auth.associate_user',
+#     'social_core.pipeline.social_auth.load_extra_data',
+#     'social_core.pipeline.user.user_details',
+# )

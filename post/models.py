@@ -43,4 +43,4 @@ def post_product(sender, instance, created, **kwargs):
         send_product_news.delay(instance.name)
 from django.contrib.auth import get_user_model
 
-User = get_user_model()
+
