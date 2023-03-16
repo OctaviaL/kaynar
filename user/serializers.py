@@ -1,8 +1,9 @@
 from rest_framework import serializers
+from rest_auth.registration.serializers import RegisterSerializer
 from django.contrib.auth import get_user_model, authenticate
-from account.tasks import send_activation_code as celery_register
+from user.tasks import send_activation_code as celery_register
 from django.contrib.auth import get_user_model
-from account.send_email import send_password_code
+from user.send_email import send_password_code
 # from account.tasks import send_activation_code as celery_register
 
 User = get_user_model()
@@ -102,4 +103,31 @@ class ForgotPasswordCompliteSerializer(serializers.Serializer):
         user.set_password(password)
         user.activation_code = ''
         user.save(update_fields=['password', 'activation_code'])
+
+# class CustomRegisterSerializer(RegisterSerializer):
+#     email = serializers.EmailField(required=True)
+#     password1 = serializers.CharField(write_only=True, required=True, validators=['validate_password'])
+#     password2 = serializers.CharField(write_only=True, required=True)
+
+#     class Meta:
+#         model = User
+#         fields = ('email', 'password1', 'password2')
+
+#     def validate_password(self, value):
+#         'validate_password'(value)
+#         return value
+
+#     def get_cleaned_data(self):
+#         super().get_cleaned_data()
+#         return {
+#             'email': self.validated_data.get('email', ''),
+#             'password1': self.validated_data.get('password1', ''),
+#             'password2': self.validated_data.get('password2', ''),
+#         }
+
+#     def save(self, request):
+#         user = super().save(request)
+#         user.email = self.cleaned_data.get('email')
+#         user.save()
+#         return user
 

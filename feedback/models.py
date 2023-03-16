@@ -63,5 +63,5 @@ class Rating(models.Model):
     rating = models.CharField(max_length=50, choices=RATING)
 
     def __str__(self) -> str:
-        return f'{self.owner} --> {self.post.title}'
+        return f'{self.owner} --> {self.post.name}'
 
