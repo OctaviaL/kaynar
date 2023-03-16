@@ -4,14 +4,11 @@ from rest_framework.routers import DefaultRouter
 
 
 router = DefaultRouter()
-router.register('comment', CommentModelViewSet)
-router.register('', FavoriteModelViewSet)
+router.register('comment', CommentModelViewSet,basename='comment')
+router.register('favorite', FavoriteModelViewSet,basename='favorite')
 
+app_name = 'yourapp'
 urlpatterns = [
-    path('', include(router.urls)),
-    path('favorite/', include(router.urls)),
-
-]
-
+    path('', include(router.urls)),]
 
 
