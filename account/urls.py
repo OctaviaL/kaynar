@@ -16,7 +16,7 @@ urlpatterns = [
     path('reset_password/', ForgotPasswordAPIView.as_view()),
     path('reset_password_complete/', ForgotPasswordCompleteAPIView.as_view()),
 
-    re_path('api/register-by-access-token/' + r'social/(?P<backend>[^/]+)/$', views.register_by_access_token),
-    path('api/authentication-test/', views.authentication_test),
+    # re_path('api/register-by-access-token/' + r'social/(?P<backend>[^/]+)/$', views.register_by_access_token),
+    # path('api/authentication-test/', views.authentication_test),
     
 ]
