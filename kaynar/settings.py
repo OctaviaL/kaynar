@@ -34,6 +34,14 @@ INSTALLED_APPS = [
     # 'rest_framework.authtoken', # Adding token based authentication from drf
     # 'social_django', # Python social auth django app
 
+    'rest_auth',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.instagram',
+    
+
     #
     'rest_framework',
     'rest_framework_simplejwt',
@@ -42,7 +50,7 @@ INSTALLED_APPS = [
     # 'social_django',
 
     # my apps
-    'account',
+    'user',
     'feedback',
     'spam',
     'volunteering',
@@ -51,6 +59,8 @@ INSTALLED_APPS = [
 ]
 
 # SOCIAL_AUTH_JSONFIELD_ENABLED = True
+SITE_ID = 1
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -150,7 +160,7 @@ REST_FRAMEWORK = {
 }
 
 
-AUTH_USER_MODEL = 'account.CustomUser'
+AUTH_USER_MODEL = 'user.CustomUser'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -267,3 +277,42 @@ LOGGING = {
 #     'social_core.pipeline.social_auth.load_extra_data',
 #     'social_core.pipeline.user.user_details',
 # )
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': '988471160823-0b8vguniv63687m4jqqhnrinki3lb2sa.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        },
+        'SCOPE': [
+            'profile',
+            'email'
+        ]
+    },
+
+    'instagram': {
+        'SCOPE': ['basic', 'public_content'],
+        'METHOD': 'oauth2',
+        'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
+        'VERIFIED_EMAIL': False,
+    }
+}
+
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+# REST_AUTH_REGISTER_SERIALIZERS = {
+#     'REGISTER_SERIALIZER': 'user.serializers.CustomRegisterSerializer'
+# }
+
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
