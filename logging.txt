@@ -3207,3 +3207,16 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/v1/account/register/ HTTP/1.1" 401 58
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/account/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/v1/account/register/ HTTP/1.1" 201 144
