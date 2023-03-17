@@ -14,5 +14,9 @@ class PetPostAdmin(admin.ModelAdmin):
     inlines = [PetImageAdminInline,]
     list_display = ('category', 'gender', 'owner')
     list_filter = ('category',)
+<<<<<<< HEAD
+=======
+
+>>>>>>> efa88ece3a5d747425dd212e8757de0abe199bcc
 
 

@@ -1,19 +1,22 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from account.serializers import RegisterSerializers, LoginSerializer, ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
+from user.serializers import RegisterSerializers, LoginSerializer, ForgotPasswordCompliteSerializer, ForgotPasswordSerializer
 from rest_framework.response import Response
 from django.contrib.auth import get_user_model
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
-from account.models import *
+from user.models import *
 from drf_yasg.utils import swagger_auto_schema
+<<<<<<< HEAD:account/views.py
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 # from social_django.utils import psa
 
 from requests.exceptions import HTTPError
+=======
+>>>>>>> efa88ece3a5d747425dd212e8757de0abe199bcc:user/views.py
 
 User = get_user_model()
 
@@ -70,6 +73,7 @@ class ForgotPasswordCompleteAPIView(APIView):
         serializer.set_new_password()
         return Response('Пароль успешно изменен!')
 
+<<<<<<< HEAD:account/views.py
 
 from rest_framework import status
 from rest_framework.authtoken.models import Token
@@ -82,6 +86,8 @@ from rest_framework.response import Response
 from requests.exceptions import HTTPError
 
 
+=======
+>>>>>>> efa88ece3a5d747425dd212e8757de0abe199bcc:user/views.py
 # @api_view(['POST'])
 # @permission_classes([AllowAny])
 # @psa()
