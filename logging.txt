@@ -3744,3 +3744,9 @@ Watching for file changes with StatReloader
 "GET /admin/post/petpost/ HTTP/1.1" 200 8131
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 "GET /admin/ HTTP/1.1" 200 7776
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 7776
+"GET /admin/ HTTP/1.1" 200 7776
+"GET /admin/ HTTP/1.1" 200 7776
+/home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
