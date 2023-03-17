@@ -5,7 +5,6 @@ from feedback.serializers import CommentSerializer,FavoriteSerializer
 from rest_framework.viewsets import  GenericViewSet
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view
 
 
 class CommentModelViewSet(mixins.CreateModelMixin, #создает

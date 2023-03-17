@@ -1,12 +1,15 @@
 from django.shortcuts import render
-from rest_framework import  viewsets, generics
+from rest_framework import  viewsets, generics,request
 from post.models import *
 from post.serializers import *
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser,IsAuthenticated
 from rest_framework.response import Response
 from feedback.models import Like, Rating
 from feedback.serializers import RatingSerializer
 from rest_framework.decorators import action
+from rest_framework.views import APIView
+
+
 
 class PetPostListGenericView(generics.ListAPIView):
     queryset = PetPost.objects.all()
@@ -41,6 +44,7 @@ class PetPostModelViewset(viewsets.ModelViewSet):
     permission_classes = [IsAdminUser]        
 
 
+
 class PetImageListGenericView(generics.ListAPIView):
     queryset = PetImage.objects.all()
     serializer_class = PetImageSerializers
@@ -51,3 +55,15 @@ class PetImageModelViewSet(viewsets.ModelViewSet):
     serializer_class = PetImageSerializers
     permission_classes = [IsAdminUser]
 
+
+
+class PostList(APIView):
+    permission_classes = [IsAuthenticated,IsAdminUser]
+
+    def post(self, request):
+        serializer = PetPostSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
+        

@@ -8,13 +8,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 from account.models import *
 from drf_yasg.utils import swagger_auto_schema
-from rest_framework import status
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny
 
-from social_django.utils import psa
 
-from requests.exceptions import HTTPError
 
 User = get_user_model()
 
@@ -72,15 +67,7 @@ class ForgotPasswordCompleteAPIView(APIView):
         return Response('Пароль успешно изменен!')
 
 
-from rest_framework import status
-from rest_framework.authtoken.models import Token
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny
-from rest_framework.response import Response
 
-from social_django.utils import psa
-
-from requests.exceptions import HTTPError
 
 
 # @api_view(['POST'])
