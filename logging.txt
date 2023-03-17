@@ -4427,3 +4427,341 @@ Watching for file changes with StatReloader
 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+Watching for file changes with StatReloader
+"GET /accounts/%20instagram/ HTTP/1.1" 404 6723
+"GET /admin/sites/site/add/ HTTP/1.1" 200 11520
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 11286
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialtoken/ HTTP/1.1" 200 11926
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 11286
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/add/ HTTP/1.1" 200 14679
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/ HTTP/1.1" 200 12334
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/1/change/ HTTP/1.1" 200 11808
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/sites/site/1/change/ HTTP/1.1" 302 0
+"GET /admin/sites/site/ HTTP/1.1" 200 12538
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 11286
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/add/ HTTP/1.1" 200 14682
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/socialaccount/socialapp/add/ HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/add/ HTTP/1.1" 200 14948
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 404 6712
+"GET /accounts/%20profile/ HTTP/1.1" 404 6717
+"GET /accounts/%20profile/ HTTP/1.1" 404 6717
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 18949
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 18949
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/ HTTP/1.1" 200 10873
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 18949
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/rating/ HTTP/1.1" 200 10436
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/rating/add/ HTTP/1.1" 200 14298
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+/home/hello/Desktop/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/post/petpost/ HTTP/1.1" 200 10873
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 18949
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/rating/ HTTP/1.1" 200 10436
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/feedback/rating/add/ HTTP/1.1" 200 14298
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+/home/hello/Desktop/kaynar/feedback/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/feedback/rating/add/ HTTP/1.1" 200 14298
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/ HTTP/1.1" 200 10873
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 18949
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+/home/hello/Desktop/kaynar/feedback/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/feedback/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/feedback/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/feedback/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/feedback/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/socialaccount/socialtoken/ HTTP/1.1" 200 11926
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 12924
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/add/ HTTP/1.1" 200 14682
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/socialaccount/socialapp/add/ HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13454
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/instagram/login/callback/ HTTP/1.1" 200 620
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/instagram/login/callback/ HTTP/1.1" 200 620
+"GET /accounts/signup/ HTTP/1.1" 200 1443
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 782
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 200 15024
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/ HTTP/1.1" 200 12335
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/add/ HTTP/1.1" 200 11520
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/sites/site/add/ HTTP/1.1" 302 0
+"GET /admin/sites/site/ HTTP/1.1" 200 12797
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 200 15077
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13456
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 782
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 782
+Internal Server Error: /accounts/instagram/login/
+Traceback (most recent call last):
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 81, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/mixins.py", line 19, in dispatch
+    return self.login(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 109, in login
+    app = provider.get_app(self.request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/provider.py", line 30, in get_app
+    return adapter.get_app(request, self.id, config=config)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/adapter.py", line 204, in get_app
+    app = SocialApp.objects.get_current(provider, request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/models.py", line 31, in get_current
+    app = self.get(sites__id=site.id, provider=provider)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+Internal Server Error: /accounts/instagram/login/
+Traceback (most recent call last):
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 81, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/mixins.py", line 19, in dispatch
+    return self.login(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 109, in login
+    app = provider.get_app(self.request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/provider.py", line 30, in get_app
+    return adapter.get_app(request, self.id, config=config)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/adapter.py", line 204, in get_app
+    app = SocialApp.objects.get_current(provider, request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/models.py", line 31, in get_current
+    app = self.get(sites__id=site.id, provider=provider)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 500 105627
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 782
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 782
+Internal Server Error: /accounts/instagram/login/
+Traceback (most recent call last):
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 81, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/mixins.py", line 19, in dispatch
+    return self.login(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 109, in login
+    app = provider.get_app(self.request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/provider.py", line 30, in get_app
+    return adapter.get_app(request, self.id, config=config)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/adapter.py", line 204, in get_app
+    app = SocialApp.objects.get_current(provider, request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/models.py", line 31, in get_current
+    app = self.get(sites__id=site.id, provider=provider)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+Internal Server Error: /accounts/instagram/login/
+Traceback (most recent call last):
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 81, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/mixins.py", line 19, in dispatch
+    return self.login(request, *args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 109, in login
+    app = provider.get_app(self.request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/providers/base/provider.py", line 30, in get_app
+    return adapter.get_app(request, self.id, config=config)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/adapter.py", line 204, in get_app
+    app = SocialApp.objects.get_current(provider, request)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/allauth/socialaccount/models.py", line 31, in get_current
+    app = self.get(sites__id=site.id, provider=provider)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 500 105627
+"GET /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 200 15077
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13456
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 782
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/1/change/ HTTP/1.1" 200 15124
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/ HTTP/1.1" 200 12588
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/1/change/ HTTP/1.1" 200 11818
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/sites/site/1/change/ HTTP/1.1" 302 0
+"GET /admin/sites/site/ HTTP/1.1" 200 12791
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/1/change/ HTTP/1.1" 200 15124
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/sites/site/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3407
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"GET /accounts/signup/ HTTP/1.1" 200 1443
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/google/login/callback/?state=yr5zmuyfEyMT&code=4%2F0AWtgzh6ie71oNJpPHHnX-9cvNgPU0GfeYl5Wdmdq-Dw1kjIDyQBPHCshuktXtybD0icuTQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 404 6712
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 960
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/logout/ HTTP/1.1" 200 773
+"POST /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 404 2977
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 914
+"GET /accounts/signup/ HTTP/1.1" 200 1443
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/google/login/callback/?state=dR78uT4KiMK1&code=4%2F0AWtgzh61ruU0T7Xqx4jL8tOlV8swR1_buUG-v87Z-U07xk5X2JDu4Bd8S27FK7XbqTgsoQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 404 6712
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 953
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/instagram/login/callback/ HTTP/1.1" 200 627
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 783
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 789
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 789
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 200 15077
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/2/change/ HTTP/1.1" 200 15077
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/instagram/login/?process=login HTTP/1.1" 200 789
+"POST /accounts/instagram/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/signup/ HTTP/1.1" 302 0
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 783
+/home/hello/Desktop/kaynar/kaynar/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/1/change/ HTTP/1.1" 200 15124
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/1/change/ HTTP/1.1" 200 15124
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/socialaccount/socialapp/1/change/ HTTP/1.1" 302 0
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13453
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/google/login/callback/ HTTP/1.1" 200 627
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/socialaccount/socialapp/1/change/ HTTP/1.1" 200 15124
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/socialaccount/socialapp/ HTTP/1.1" 200 13231
+"GET /admin/sites/site/ HTTP/1.1" 200 12588
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/ HTTP/1.1" 200 10873
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /accounts/google/login/callback/ HTTP/1.1" 200 627
+"GET /accounts/logout/ HTTP/1.1" 200 773
+"POST /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 404 2977
+"GET /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 404 2977
+"GET / HTTP/1.1" 404 2977
+"GET /accounts/ HTTP/1.1" 404 6688
+"GET /accounts/login/ HTTP/1.1" 200 2091
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"GET /accounts/signup/ HTTP/1.1" 200 1443
+"GET /accounts/signup/ HTTP/1.1" 200 1443
+"GET /accounts/login/ HTTP/1.1" 200 1953
+"GET /accounts/google/login/?process=login HTTP/1.1" 200 776
+"POST /accounts/google/login/?process=login HTTP/1.1" 302 0
+"GET /accounts/google/login/callback/?state=ipUODn2X7deB&code=4%2F0AWtgzh7gvQy59u4j41Bx__lvh3VmyhSTvRGDcAGT2cMSuPcUx0yQzWzTPWJslYICSgJDYw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 404 6712

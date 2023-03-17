@@ -22,6 +22,7 @@ class PetPostSerializers(serializers.ModelSerializer):
             representation['images'] = PetImageSerializers(instance.images.all(), many=True, context=self.context).data
             return representation 
     
+    rating = RatingSerializer(many=True, read_only=True)
     images = PetImageSerializers (many=True, read_only=True)
     likes = LikeSerializer(many=True,read_only=True)
     owner = serializers.ReadOnlyField(source='owner.email')

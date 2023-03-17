@@ -12,7 +12,7 @@ class PetImageAdminInline(admin.TabularInline):
 class PetPostAdmin(admin.ModelAdmin):
     inlines = [PetImageAdminInline,]
     list_display = ('category', 'gender', 'owner')
-    list_filter = ('category',)
+    list_filter = ('category', )
 
 
 
