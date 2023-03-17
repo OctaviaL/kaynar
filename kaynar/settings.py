@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.sites',
+
     # #
     # # 'users.apps.UsersConfig', # Our users app
     # 'rest_framework.authtoken', # Adding token based authentication from drf
@@ -92,8 +94,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social_django.context_processors.backends', # add this
-                'social_django.context_processors.login_redirect', # add this
+                # 'social_django.context_processors.backends', # add this
+                # 'social_django.context_processors.login_redirect', # add this
+        
             ],
         },
     },
@@ -280,15 +283,19 @@ LOGGING = {
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
-        'APP': {
-            'client_id': '988471160823-0b8vguniv63687m4jqqhnrinki3lb2sa.apps.googleusercontent.com',
-            'secret': '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',
-            'key': ''
-        },
+        # 'APP': {
+        #     'client_id': '988471160823-0b8vguniv63687m4jqqhnrinki3lb2sa.apps.googleusercontent.com',
+        #     'secret': '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',
+        #     'key': ''
+        # },
         'SCOPE': [
             'profile',
             'email'
-        ]
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
     },
 
     'instagram': {
@@ -308,6 +315,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
+    
 )
 
 # REST_AUTH_REGISTER_SERIALIZERS = {
