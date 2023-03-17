@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     # 'rest_framework.authtoken', # Adding token based authentication from drf
     # 'social_django', # Python social auth django app
 
-    'rest_auth',
+    # 'rest_auth',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',

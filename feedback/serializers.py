@@ -27,7 +27,7 @@ class FavoriteSerializer(serializers.ModelSerializer):
 
 
 class RatingSerializer(serializers.ModelSerializer):
-    rating = serializers.IntegerField(min_value=1, max_value=5)
+    rating = serializers.CharField()
 
     class Meta:
         model = Rating 

@@ -33,6 +33,9 @@ class PetPostListGenericView(generics.ListAPIView):
         rating_obj.rating = serializer.data['rating']
         rating_obj.save()
         return Response(serializer.data)
+    
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
    
 
 class PetPostModelViewset(viewsets.ModelViewSet):
