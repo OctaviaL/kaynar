@@ -41,9 +41,9 @@ urlpatterns = [
     # path('api/v1/post/', include('feedback.urls')),
     path('api/v1/feedback/', include('feedback.urls')),
 
-    re_path('rest-auth/', include('rest_auth.urls')),
-    re_path('rest-auth/registration/', include('rest_auth.registration.urls')),
-    re_path('social-auth/', include('allauth.urls')),
+   #  re_path('rest-auth/', include('rest_auth.urls')),
+   #  re_path('rest-auth/registration/', include('rest_auth.registration.urls')),
+    path('accounts/', include('allauth.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

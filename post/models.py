@@ -24,6 +24,7 @@ class PetPost(models.Model):
     gender = models.CharField(choices=CHOICES2, max_length=10)
     description = models.TextField()
     category = models.CharField(choices=CHOICES1, max_length=20)
+    # image = models.ForeignKey('PetImage', on_delete=models.CASCADE, related_name='images')
     
     def __str__(self):
         return f'{self.name}'
