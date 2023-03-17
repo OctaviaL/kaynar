@@ -11,22 +11,19 @@ def get_soup(html):
     return soup
 
 def get_data(soup):
-    news = soup.find_all('div', class_="Tag--article")
-    data = []
+    post = soup.find_all('div', class_='homepage_container__dCpGD')
+    data =[]
 
     count_ = 0
 
-    for i in news:
-        title = i.find('a', class_="ArticleItem--name").text.strip()
+    for i in post:
         photo = i.find('img').get('src')
-        
         description_url = i.find('a', class_="ArticleItem--name").get('href')
-
         description_html = get_html(description_url)
         description_soup = get_soup(description_html)
         description = description_soup.find('div', class_="BbCode").text.replace('\n', '')
         
-        data.append([title, photo, description])
+        data.append([photo, description])
 
         count_ += 1
         if count_ == 20:
@@ -34,9 +31,13 @@ def get_data(soup):
      
     return data
 
+
+
+
+
 def main():
-    url = 'https://www.instagram.com/kainar.help/'
+    url = 'https://fullstack-hacaton-makers.vercel.app/'
     html = get_html(url)
     soup = get_soup(html)
-    date = get_data(soup)
-    return date
+    data = get_data(soup)
+    return data
