@@ -4765,3 +4765,33 @@ Watching for file changes with StatReloader
 "POST /accounts/google/login/?process=login HTTP/1.1" 302 0
 "GET /accounts/google/login/callback/?state=ipUODn2X7deB&code=4%2F0AWtgzh7gvQy59u4j41Bx__lvh3VmyhSTvRGDcAGT2cMSuPcUx0yQzWzTPWJslYICSgJDYw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent HTTP/1.1" 302 0
 "GET /accounts/profile/ HTTP/1.1" 404 6712
+Watching for file changes with StatReloader
+"POST /api/v1/post/pets/ HTTP/1.1" 401 183
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
+Watching for file changes with StatReloader
