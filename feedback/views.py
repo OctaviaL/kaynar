@@ -8,7 +8,7 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class CommentModelViewSet(mixins.CreateModelMixin, #создает
-                   mixins.RetrieveModelMixin, #
+                   mixins.RetrieveModelMixin,
                    mixins.DestroyModelMixin,
                    mixins.ListModelMixin,
                    GenericViewSet):

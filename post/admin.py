@@ -11,6 +11,8 @@ class PetImageAdminInline(admin.TabularInline):
 @admin.register(PetPost)
 class PetPostAdmin(admin.ModelAdmin):
     inlines = [PetImageAdminInline,]
+    list_display = ('category', 'gender', 'owner')
+    list_filter = ('category',)
 
 
 

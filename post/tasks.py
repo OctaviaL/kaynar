@@ -15,6 +15,6 @@ def send_product_news(name):
     send_mail(
         'Приют для животных "Кайнар"', # title
         f'У нас новый друг по имени {name}, скорее заходи знакомиться!!', # body
-        'lucifercommander@gmail.com', # from
+        'omurbekovaerika@gmail.com', # from
         emails # to
     )
