@@ -8,6 +8,6 @@ def send_order_confirmation_code(email, code, name, price):
     send_mail(
     'Волонтерство над малышом приюта "Кайнар"',
     full_link,
-    'lucifercommander@gmail.com',
+    'ajkanysdzumagulova@gmail.com',
     [email]
     )

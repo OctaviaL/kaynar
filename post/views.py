@@ -2,15 +2,25 @@ from django.shortcuts import render
 from rest_framework import  viewsets, generics
 from post.models import *
 from post.serializers import *
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser, AllowAny
 from rest_framework.response import Response
 from feedback.models import Like, Rating
 from feedback.serializers import RatingSerializer
 from rest_framework.decorators import action
+from rest_framework.filters import SearchFilter
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.pagination import PageNumberPagination
+
+class PetsPagePagination(PageNumberPagination):
+    page_size = 10
+    page_size_query_param = 'page_size'
+    max_page_size = 50
+
 
 class PetPostListGenericView(generics.ListAPIView):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
+    permission_classes = [AllowAny]
 
 class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
@@ -42,15 +52,27 @@ class PetPostModelViewset(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
    
+class PetPostModelViewset(viewsets.ModelViewSet):
+    queryset = PetPost.objects.all()
+    serializer_class = PetPostSerializers
+    permission_classes = [IsAdminUser] 
+    pagination_class = PetsPagePagination
+    filter_backends = [DjangoFilterBackend, SearchFilter]
+    filterset_fields = ['category', 'gender']
+    search_fields = ['category']
 
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
 
 class PetImageListGenericView(generics.ListAPIView):
     queryset = PetImage.objects.all()
     serializer_class = PetImageSerializers
-
+    permission_classes = [AllowAny]
 
 class PetImageModelViewSet(viewsets.ModelViewSet):
     queryset = PetImage.objects.all()
     serializer_class = PetImageSerializers
+    pagination_class = PetsPagePagination
     permission_classes = [IsAdminUser]
+
 
