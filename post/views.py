@@ -12,6 +12,11 @@ class PetPostListGenericView(generics.ListAPIView):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
 
+class PetPostModelViewset(viewsets.ModelViewSet):
+    queryset = PetPost.objects.all()
+    serializer_class = PetPostSerializers
+    permission_classes = [IsAdminUser]        
+
     @action(methods=['POST'], detail=True)
     def like(self, request, pk, *args, **kwargs):
         user = request.user
@@ -37,11 +42,6 @@ class PetPostListGenericView(generics.ListAPIView):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
    
-
-class PetPostModelViewset(viewsets.ModelViewSet):
-    queryset = PetPost.objects.all()
-    serializer_class = PetPostSerializers
-    permission_classes = [IsAdminUser]        
 
 
 class PetImageListGenericView(generics.ListAPIView):
