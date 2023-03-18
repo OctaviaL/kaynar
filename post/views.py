@@ -49,11 +49,13 @@ class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
     permission_classes = [IsAdminUser] 
-
     pagination_class = PetsPagePagination
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ['category', 'gender']
     search_fields = ['category']
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
 
 
 
