@@ -24,14 +24,14 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('swagger/', schema_view.with_ui('swagger')),
-    path('api/v1/account/', include('account.urls')),
+    path('api/v1/account/', include('user.urls')),
     path('api/v1/post/', include('post.urls')),
     path('api/v1/spam/', include('spam.urls')),
     path('api/v1/volunteering/', include('volunteering.urls')),
    #  path('social-auth/', include('social_django.urls', namespace="social")),
     # path('api/v1/post/', include('feedback.urls')),
     path('api/v1/feedback/', include('feedback.urls')),
-    path('api/v1/review/', include('review.urls')),
+   #  path('api/v1/review/', include('review.urls')),
 
    #  re_path('rest-auth/', include('rest_auth.urls')),
    #  re_path('rest-auth/registration/', include('rest_auth.registration.urls')),

@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'spam',
     'volunteering',
     'post',
-    'review',
+
 
 ]
 

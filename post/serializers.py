@@ -14,7 +14,8 @@ class PetPostSerializers(serializers.ModelSerializer):
 
     images = PetImageSerializers (many=True, read_only=True)
     likes = LikeSerializer(many=True,read_only=True)
-    owner = serializers.ReadOnlyField(source='owner.email')
+    owner = serializers.EmailField(required=False)
+    
 
     likes_count = serializers.SerializerMethodField()
 
