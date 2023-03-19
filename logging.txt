@@ -193,6 +193,12 @@ Watching for file changes with StatReloader
 "GET /swagger/?format=openapi HTTP/1.1" 200 3705
 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
 Watching for file changes with StatReloader
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
+=======
 "GET / HTTP/1.1" 404 2519
 "GET /favicon.ico HTTP/1.1" 404 2570
 "GET /swagger/ HTTP/1.1" 200 2153
@@ -482,6 +488,7 @@ Watching for file changes with StatReloader
 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
 =======
+>>>>>>> c28120e81810cc0033e20a480356d5cd470edd85
 "POST /api/v1/account/register/ HTTP/1.1" 400 50
 "POST /api/v1/account/reset_password/ HTTP/1.1" 400 37
 "POST /api/v1/account/reset_password_complete/ HTTP/1.1" 400 122
@@ -586,6 +593,10 @@ Watching for file changes with StatReloader
 "GET /admin/login/?next=/admin/post/petpost/add/ HTTP/1.1" 200 2249
 "GET /static/admin/css/base.css HTTP/1.1" 304 0
 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+<<<<<<< HEAD
+>>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
@@ -593,6 +604,10 @@ Watching for file changes with StatReloader
 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2381
 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2381
@@ -990,9 +1005,19 @@ Traceback (most recent call last):
     return self.cursor.execute(sql, params)
 psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "post_petpost_name_key"
 DETAIL:  Key (name)=(Сэм) already exists.
+<<<<<<< HEAD
+>>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
+
+
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
+<<<<<<< HEAD
+=======
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1307,6 +1332,10 @@ psycopg2.errors.UndefinedColumn: column post_petpost.image does not exist
 LINE 1: ...etpost"."description", "post_petpost"."category", "post_petp...
                                                              ^
 HINT:  Perhaps you meant to reference the column "post_petpost.age".
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1366,9 +1395,19 @@ Traceback (most recent call last):
     return self.cursor.execute(sql, params)
 psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "post_petpost_name_key"
 DETAIL:  Key (name)=(Сэм) already exists.
+<<<<<<< HEAD
+>>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
+
+
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
+<<<<<<< HEAD
+=======
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/py25/django/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1662,6 +1701,10 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/hello/Desktop/py25/django/kaynar/post/views.py changed, reloading.
 Watching for file changes with StatReloader
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
     response = get_response(request)
   File "/home/hello/Desktop/kaynar/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
@@ -1762,6 +1805,57 @@ Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/celery.py changed, reloading.
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/celery.py changed, reloading.
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 161b0e3c46b4f928f9142cce3dd238da62048a58
+=======
+>>>>>>> bc3141b4f7c4f3edfe67c04fcc4d268878cf38f4
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/post/petpost/ HTTP/1.1" 200 7884
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/volunteering/volunteer/ HTTP/1.1" 200 6777
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/spam/contact/ HTTP/1.1" 200 6731
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/ HTTP/1.1" 200 7884
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/post/petpost/add/ HTTP/1.1" 200 15368
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+/home/hello/Desktop/py25/django/kaynar/volunteering/send_email.py changed, reloading.
+Watching for file changes with StatReloader
+/home/hello/Desktop/py25/django/kaynar/volunteering/send_email.py changed, reloading.
+Watching for file changes with StatReloader
+=======
 
 Watching for file changes with StatReloader
 "GET /admin/ HTTP/1.1" 302 0
@@ -3220,6 +3314,9 @@ Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/account/urls.py changed, reloading.
 Watching for file changes with StatReloader
 "POST /api/v1/account/register/ HTTP/1.1" 201 144
+<<<<<<< HEAD
+>>>>>>> c28120e81810cc0033e20a480356d5cd470edd85
+=======
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/kaynar/urls.py changed, reloading.
 Watching for file changes with StatReloader
@@ -4427,6 +4524,7 @@ Watching for file changes with StatReloader
 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+<<<<<<< HEAD
 Watching for file changes with StatReloader
 "GET /accounts/%20instagram/ HTTP/1.1" 404 6723
 "GET /admin/sites/site/add/ HTTP/1.1" 200 11520
@@ -4795,3 +4893,6 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/hello/Desktop/kaynar/post/serializers.py changed, reloading.
 Watching for file changes with StatReloader
+=======
+>>>>>>> efa88ece3a5d747425dd212e8757de0abe199bcc
+>>>>>>> dec99d32be5c4bbd2e3c004fc497b892c1af20e7

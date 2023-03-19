@@ -2,6 +2,7 @@ from pathlib import Path
 from decouple import config
 import dj_database_url
 from datetime import timedelta
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',
     'corsheaders',
-    # 'social_django',
+
 
     # my apps
     'user',
@@ -57,6 +58,7 @@ INSTALLED_APPS = [
     'spam',
     'volunteering',
     'post',
+
 
 ]
 
@@ -96,7 +98,6 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 # 'social_django.context_processors.backends', # add this
                 # 'social_django.context_processors.login_redirect', # add this
-        
             ],
         },
     },
@@ -157,9 +158,12 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
+    'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 50,
+
 }
 
 
@@ -203,32 +207,65 @@ SWAGGER_SETTINGS = {
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'handlers': {
+    'hadlers': {
         'console': {
             'class': 'logging.StreamHandler',
         },
         'file': {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': 'logging.txt',
-            'maxBytes': 1024*1024*5, # 5 MB
+            'maxBytes': 1024*1024*5,
             'backupCount': 5,
+        }
+    },
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+        'special': {
+            '(name)': 'project.logging.SpecialFilter',
+            'foo': 'barSpecialFilter',
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'filters': ['special']
         }
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file'],
-            'level': 'INFO',
+            'handlers': ['console'],
+            'propagate': True,
         },
         'django.request': {
-            'handlers': ['console', 'file'],
+            'handlers': ['mail_admins'],
             'level': 'ERROR',
-        },
-        'myapp': {
-            'handlers': ['console', 'file'],
-            'level': 'DEBUG',
             'propagate': False,
         },
-    },
+        'myproject.custom': {
+            'handlers': ['console', 'mail_admins'],
+            'level': 'INFO',
+            'filters': ['special']
+        }
+    }
 }
 
 

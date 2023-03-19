@@ -74,4 +74,9 @@ wheel
 djangorestframework-jwt 
 django-rest-auth
 django-allauth
+django-filter
+lxml
+beautifulsoup4
+pyTelegramBotAPI
+
 

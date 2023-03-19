@@ -14,22 +14,23 @@ class PetPostSerializers(serializers.ModelSerializer):
 
     images = PetImageSerializers (many=True, read_only=True)
     likes = LikeSerializer(many=True,read_only=True)
-    owner = serializers.ReadOnlyField(source='owner.email')
+    owner = serializers.EmailField(required=False)
+    
 
     likes_count = serializers.SerializerMethodField()
 
     class Meta:
         model = PetPost
         fields = '__all__'
-
-    def to_representation(self, instance):
-            representation = super().to_representation(instance)
-            representation['images'] = PetImageSerializers(instance.images.all(), many=True, context=self.context).data
-            return representation 
     
 
     def get_likes_count(self, post):
         return Like.objects.filter(post_id=post).count()
+    
+    def to_representation(self, instance):
+            representation = super().to_representation(instance)
+            representation['images'] = PetImageSerializers(instance.images.all(), many=True, context=self.context).data
+            return representation 
 
 
     def create(self, validated_data):

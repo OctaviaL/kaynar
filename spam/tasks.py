@@ -8,6 +8,6 @@ def send_spam():
     send_mail(
         'Приют "Кайнар"', # title
         f'Привет! Малыши из нашего приюта уже соскучились по тебе, скорее заходи навестить их!', # body
-        'lucifercommander@gmail.com', # from
+        'ajkanysdzumagulova@gmail.com', # from
         emails # to
     )
