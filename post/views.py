@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import  viewsets, generics
 from post.models import *
 from post.serializers import *
-from rest_framework.permissions import IsAdminUser, AllowAny
+from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from feedback.models import Like, Rating
 from feedback.serializers import RatingSerializer
@@ -25,7 +25,7 @@ class PetPostListGenericView(generics.ListAPIView):
 class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
-    permission_classes = [IsAdminUser]        
+    permission_classes = [IsAuthenticated]        
     pagination_class = PetsPagePagination
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ['category', 'gender']
@@ -52,9 +52,11 @@ class PetPostModelViewset(viewsets.ModelViewSet):
         rating_obj.rating = serializer.data['rating']
         rating_obj.save()
         return Response(serializer.data)
+
     
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
    
 
 class PetImageListGenericView(generics.ListAPIView):
@@ -66,6 +68,6 @@ class PetImageModelViewSet(viewsets.ModelViewSet):
     queryset = PetImage.objects.all()
     serializer_class = PetImageSerializers
     pagination_class = PetsPagePagination
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAuthenticated]
 
 
