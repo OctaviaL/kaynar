@@ -26,6 +26,10 @@ class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
     permission_classes = [IsAdminUser]        
+    pagination_class = PetsPagePagination
+    filter_backends = [DjangoFilterBackend, SearchFilter]
+    filterset_fields = ['category', 'gender']
+    search_fields = ['category']
 
     @action(methods=['POST'], detail=True)
     def like(self, request, pk, *args, **kwargs):
@@ -52,17 +56,6 @@ class PetPostModelViewset(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
    
-class PetPostModelViewset(viewsets.ModelViewSet):
-    queryset = PetPost.objects.all()
-    serializer_class = PetPostSerializers
-    permission_classes = [IsAdminUser] 
-    pagination_class = PetsPagePagination
-    filter_backends = [DjangoFilterBackend, SearchFilter]
-    filterset_fields = ['category', 'gender']
-    search_fields = ['category']
-
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
 
 class PetImageListGenericView(generics.ListAPIView):
     queryset = PetImage.objects.all()
