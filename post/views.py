@@ -40,7 +40,7 @@ class PetPostModelViewset(viewsets.ModelViewSet):
         like_obj.is_like = not like_obj.is_like
         like_obj.save()
         status = 'Поглажен'
-        if not like_obj.is_like:
+        if not like_obj.is_like: #m,klfgklgjnhgjndgjnkdg
             status = 'unliked'
         return Response({'status': status})
     
