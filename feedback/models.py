@@ -8,6 +8,11 @@ class Like(models.Model):
     """
         Модель поглаживаний
     """
+    owner = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='likes'
+    )
 
     post = models.ForeignKey(
         PetPost,
@@ -21,12 +26,14 @@ class Like(models.Model):
     
 
 class Comment(models.Model):
-    post_comment = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='comments') # пост 
-    text = models.TextField()
-    created_date = models.DateTimeField(auto_now_add=True)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
+    post = models.ForeignKey(PetPost, on_delete=models.CASCADE, related_name='comments')
+    body = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.text
+    def __str__(self) -> str:
+        return f'{self.owner} -> {self.post.name}'
     
 
 class Favorite(models.Model):
