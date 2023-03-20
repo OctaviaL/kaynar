@@ -5,4 +5,4 @@ migrate:
 	python3 manage.py migrate 
 
 celery:
-	celery -A shop worker -l debug
+	celery -A kaynar worker -l debug
