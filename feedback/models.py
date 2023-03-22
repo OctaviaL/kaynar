@@ -70,4 +70,7 @@ class Rating(models.Model):
 
     def __str__(self) -> str:
         return f'{self.owner} --> {self.post.name}'
+    
+
+
 
