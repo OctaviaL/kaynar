@@ -18,15 +18,15 @@ class PetPostSerializers(serializers.ModelSerializer):
     
 
     likes_count = serializers.SerializerMethodField()
-
-    class Meta:
-        model = PetPost
-        fields = '__all__'
     
 
     def get_likes_count(self, post):
         return Like.objects.filter(post_id=post).count()
     
+    class Meta:
+        model = PetPost
+        fields = '__all__'
+
     def to_representation(self, instance):
             representation = super().to_representation(instance)
             representation['images'] = PetImageSerializers(instance.images.all(), many=True, context=self.context).data

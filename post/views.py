@@ -1,8 +1,7 @@
-from django.shortcuts import render
 from rest_framework import  viewsets, generics
 from post.models import *
 from post.serializers import *
-from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from feedback.models import Like, Rating
 from feedback.serializers import RatingSerializer
@@ -10,6 +9,9 @@ from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.pagination import PageNumberPagination
+from django.db.models import Count
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator
 
 class PetsPagePagination(PageNumberPagination):
     page_size = 10
@@ -22,6 +24,7 @@ class PetPostListGenericView(generics.ListAPIView):
     serializer_class = PetPostSerializers
     permission_classes = [AllowAny]
 
+@method_decorator(cache_page(60 * 60), name='dispatch') 
 class PetPostModelViewset(viewsets.ModelViewSet):
     queryset = PetPost.objects.all()
     serializer_class = PetPostSerializers
@@ -52,10 +55,23 @@ class PetPostModelViewset(viewsets.ModelViewSet):
         rating_obj.rating = serializer.data['rating']
         rating_obj.save()
         return Response(serializer.data)
-
     
+    @action(methods=['GET'], detail=True)
+    def recomendations(self):
+
+        all_ratings = Rating.objects.all()
+        grouped_ratings = all_ratings.values('post').annotate(total_votes=Count('id'))
+        min_votes = 2
+        filtered_ratings = grouped_ratings.filter(total_votes__gte=min_votes)
+        top_n_posts = filtered_ratings[:3]
+        return Response(top_n_posts)
+
+
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
+    
+
 
    
 

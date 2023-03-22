@@ -12,3 +12,6 @@ class PetPostAdmin(admin.ModelAdmin):
     list_display = ('category', 'gender', 'owner')
     list_filter = ('category', )
     list_filter = ('category',)
+
+    def post_count(self, obj):
+        return obj.likes.filter(is_like=True).count()
