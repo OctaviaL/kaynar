@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'spam',
     'volunteering',
     'post',
+    'KaynarBot',
 
 
 ]
@@ -268,6 +269,12 @@ LOGGING = {
     }
 }
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'kaynar_cache'),
+    }
+}
 
 # SOCIAL_AUTH_POSTGRES_JSONFIELD = True
 
